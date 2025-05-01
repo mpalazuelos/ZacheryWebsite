@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>For You 💛</title>
+<style>
+body {
+font-family: 'Segoe UI', sans-serif;
+background: #f0f8f7;
+color: #2d3e3f;
+margin: 0;
+padding: 0;
+}
+
+header {
+background: #cce7e0;
+padding: 2rem;
+text-align: center;
+font-size: 2rem;
+font-weight: bold;
+color: #2b5c5e;
+}
+
+.container {
+max-width: 800px;
+margin: 2rem auto;
+padding: 1rem;
+}
+
+.section {
+background: #ffffff;
+border-radius: 10px;
+padding: 1.5rem;
+margin-bottom: 1.5rem;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+color: #2b5c5e;
+}
+
+ul {
+list-style-type: heart;
+padding-left: 1.5rem;
+}
+
+li {
+margin: 0.5rem 0;
+}
+
+.quote {
+font-style: italic;
+text-align: center;
+margin-top: 1rem;
+}
+
+.gallery {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+gap: 1rem;
+}
+
+.gallery img {
+width: 100%;
+border-radius: 10px;
+}
+
+.encouragement {
+font-size: 1.25rem;
+text-align: center;
+color: #1f3f40;
+}
+
+button {
+background-color: #a2d5c6;
+border: none;
+padding: 0.5rem 1rem;
+border-radius: 8px;
+cursor: pointer;
+font-weight: bold;
+margin-top: 1rem;
+}
+
+button:hover {
+background-color: #8bc1b5;
+}
+</style>
+</head>
+<body>
+<header>
+🌼 For my lovely and handsome boyfriend Zachery, From Maria 🌼
+</header>
+
+<div class="container">
+<div class="section">
+<h2>Things That Help</h2>
+<ul>
+<li>Drink a lot of water 💧</li>
+<li>Take deep breaths 🌬️</li>
+<li>Listen to calming music 🎶</li>
+<li>Hangout with Mr. Toby 😄</li>
+<li>Rest without guilt 🛏️</li>
+<li>Drink Tea 🍵</li>
+<li>Starting a new TV show or watching a movie 📺</li>
+<li>Asking your friendly neighbor for her Mucinex 💊</li>
+</ul>
+</div>
+
+<div class="container">
+<div class="section">
+<h2>Things That Definitely Probably Will Not Help</h2>
+<ul>
+<li>Overdoing a workout...</li>
+<li>Salty foods</li>
+<li>Chugging orange juice - according to several sources online</li>
+<li>Not taking more pictures of Mr. Toby</li>
+<li>Stressing - Your boss will understand that you are sicky lovely</li>
+<li>Hardcore drugs</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>Reminders:</h2>
+<div class="encouragement" id="encouragement"></div>
+<button onclick="showEncouragement()">Show Another</button>
+</div>
+</div>
+
+<script>
+const messages = [
+"Use all the cough drops you'd like. 💖",
+"Rest is productive too. Let your body and mind relax today. 💤",
+"You make my world brighter! ☀️"
+];
+
+function showEncouragement() {
+const index = Math.floor(Math.random() * messages.length);
+document.getElementById("encouragement").textContent = messages[index];
+}
+
+// Show one on load
+showEncouragement();
+</script>
+</body>
+</html>
